@@ -26,7 +26,10 @@
         <span style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:15px; color:#e7eef0;">Vasileios Tzoumas</span>
         <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.1em; color:#5fb3c0; border:1px solid #2c5460; border-radius:3px; padding:2px 6px;">iRaL</span>
       </a>
-      <div style="display:flex; gap:1px; font-family:'IBM Plex Mono',monospace; font-size:12px; flex-wrap:wrap; justify-content:flex-end;">
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" onclick="var l=document.getElementById('nav-links');var o=l.classList.toggle('open');this.classList.toggle('open',o);this.setAttribute('aria-expanded',o);">
+        <span></span><span></span><span></span>
+      </button>
+      <div id="nav-links" class="nav-links" style="display:flex; gap:1px; font-family:'IBM Plex Mono',monospace; font-size:12px; flex-wrap:wrap; justify-content:flex-end;">
         <a href="index.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Home</a>
         <a href="team.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Team</a>
         <a href="publications.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Publications</a>
@@ -97,7 +100,16 @@
 </div>
 
 <style>
+  .nav-toggle { display:none; background:none; border:0; padding:8px; margin:0; cursor:pointer; flex-direction:column; justify-content:center; gap:5px; }
+  .nav-toggle span { display:block; width:22px; height:2px; background:#cfdde1; border-radius:2px; transition:transform .2s ease, opacity .2s ease; }
+  .nav-toggle.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+  .nav-toggle.open span:nth-child(2) { opacity:0; }
+  .nav-toggle.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
   @media (max-width: 860px) {
+    .nav-toggle { display:inline-flex; }
+    .nav-links { display:none !important; position:absolute; top:100%; left:0; right:0; flex-direction:column !important; align-items:stretch !important; justify-content:flex-start !important; gap:2px !important; background:rgba(15,24,31,0.98); border-bottom:1px solid #2c3a40; padding:10px 22px 16px; box-shadow:0 14px 28px rgba(0,0,0,0.28); }
+    .nav-links.open { display:flex !important; }
+    .nav-links a, .nav-links span { padding:12px !important; border-radius:6px; font-size:14px !important; white-space:normal !important; }
     .bio-grid, .press-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
     .award-row { grid-template-columns: 48px 1fr !important; }
     .award-row .award-flag { grid-column: 1 / -1; justify-self: start; margin-top: 6px; }
