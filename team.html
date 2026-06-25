@@ -163,13 +163,22 @@ const alumniRaw = [
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const $ = (id) => document.getElementById(id);
 const initials = (n) => n.split(' ').filter(Boolean).slice(0,2).map(w => w[0]).join('').toUpperCase();
+const slugify = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+// Try a locally hosted photo first; on 404 fall back to the WordPress URL, then to initials.
+function teamImgFallback(el) {
+  const wp = el.getAttribute('data-wp');
+  if (wp && !el.dataset.triedWp) { el.dataset.triedWp = '1'; el.src = wp; return; }
+  const d = document.createElement('div');
+  d.style.cssText = "width:100%; aspect-ratio:1; background:repeating-linear-gradient(135deg,#e4e9ea,#e4e9ea 9px,#dbe2e3 9px,#dbe2e3 18px); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:26px; color:#aab6ba;";
+  d.textContent = el.getAttribute('data-initials') || '';
+  el.replaceWith(d);
+}
 
 // --- Current members, grouped ---
 $('groups').innerHTML = groupsRaw.map((group) => {
   const members = group.members.map((m) => {
-    const media = m.img
-      ? `<img src="${esc(m.img)}" alt="${esc(m.name)}" style="width:100%; aspect-ratio:1; object-fit:cover; display:block; background:#e4e9ea;" />`
-      : `<div style="width:100%; aspect-ratio:1; background:repeating-linear-gradient(135deg,#e4e9ea,#e4e9ea 9px,#dbe2e3 9px,#dbe2e3 18px); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:26px; color:#aab6ba;">${esc(initials(m.name))}</div>`;
+    const local = m.photo || ('team-images/' + slugify(m.name) + '.jpg');
+    const media = `<img src="${esc(local)}" alt="${esc(m.name)}" data-wp="${esc(m.img || '')}" data-initials="${esc(initials(m.name))}" onerror="teamImgFallback(this)" style="width:100%; aspect-ratio:1; object-fit:cover; display:block; background:#e4e9ea;" />`;
     const note = m.note
       ? `<div style="font-size:12px; color:#9aa5a9; margin-top:5px; font-style:italic;">${esc(m.note)}</div>`
       : '';
