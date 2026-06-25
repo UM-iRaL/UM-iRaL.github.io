@@ -109,7 +109,7 @@ const groupsRaw = [
     { name: 'Jiawei Xu', program: 'Ph.D. @ Lehigh (D. Saldaña)', term: 'Fall 2025–present', img: W + '2025/12/unnamed.jpg?w=400' },
   ]},
   { label: 'Ph.D. Students', members: [
-    { name: 'Jose Díaz Peón G. Pacheco', program: 'Aerospace', term: 'Fall 2025–present', img: W + '2024/12/img_3685.jpg?w=400' },
+    { name: 'Jose Díaz Peón González Pacheco', program: 'Aerospace · M.S. @ U-M', term: 'Fall 2025–present', img: W + '2024/12/img_3685.jpg?w=400', link: 'https://jcdiazpeon.github.io/' },
     { name: 'Robin Inho Kee', program: 'Robotics · M.S. @ U-M', term: 'Fall 2025–present', img: W + '2025/03/umich_pic-1.jpg?w=400' },
     { name: 'Atharva Navsalkar', program: 'Aerospace · IIT Kharagpur', term: 'Fall 2023–present', img: W + '2023/09/profile-image-1.jpg?w=400' },
     { name: 'Hongyu Zhou', program: 'Aerospace · M.S. @ NTNU', term: 'Fall 2021–present', img: W + '2025/04/img_2374_720.jpg' },
@@ -176,7 +176,7 @@ $('groups').innerHTML = groupsRaw.map((group) => {
     return `<div style="background:#fff; border:1px solid #dde2e4; border-radius:8px; overflow:hidden;">
       ${media}
       <div style="padding:13px 14px 15px;">
-        <div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:15px; line-height:1.25; color:#15181b;">${esc(m.name)}</div>
+        <div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:15px; line-height:1.25; color:#15181b;">${m.link ? `<a href="${esc(m.link)}" target="_blank" rel="noopener" style="color:inherit; text-decoration:none; border-bottom:1px solid #3f8d9a;">${esc(m.name)}</a>` : esc(m.name)}</div>
         <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:0.04em; text-transform:uppercase; color:#3f8d9a; margin-top:6px;">${esc(m.program)}</div>
         <div style="font-size:12.5px; color:#7d888c; margin-top:4px;">${esc(m.term)}</div>
         ${note}
