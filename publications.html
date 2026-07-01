@@ -1,137 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Publications — Intelligent Robotics &amp; Autonomy Lab (iRaL)</title>
-<meta name="description" content="Peer-reviewed research and preprints from Vasileios Tzoumas and the Intelligent Robotics & Autonomy Lab (iRaL) at the University of Michigan.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
-  body { background: #e9ecee; }
-  ::selection { background: #b6d4d9; }
+  body { background: #f4f3ee; }
+  ::selection { background: #ffe27a; }
   a { color: inherit; }
 </style>
-</head>
-<body>
-<div style="font-family:'IBM Plex Sans',sans-serif; color:#15181b; background:#e9ecee; min-height:100vh; -webkit-font-smoothing:antialiased;">
+</helmet>
 
-  <nav style="position:sticky; top:0; z-index:40; background:rgba(18,29,38,0.94); backdrop-filter:blur(10px); border-bottom:1px solid #2c3a40;">
-    <div style="max-width:1180px; margin:0 auto; padding:0 44px; height:58px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
-      <a href="index.html" style="display:flex; align-items:center; gap:10px; text-decoration:none; white-space:nowrap;">
-        <span style="width:9px; height:9px; background:#3f9aa8; border-radius:50%; display:inline-block;"></span>
-        <span style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:15px; color:#e7eef0;">Vasileios Tzoumas</span>
-        <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.1em; color:#5fb3c0; border:1px solid #2c5460; border-radius:3px; padding:2px 6px;">iRaL</span>
+<div style="font-family:'IBM Plex Sans',sans-serif; color:#14181c; background:#f4f3ee; min-height:100vh; -webkit-font-smoothing:antialiased;">
+
+  <nav style="position:sticky; top:0; z-index:40; background:#00274c; border-bottom:3px solid #ffcb05;">
+    <div style="max-width:1200px; margin:0 auto; padding:0 40px; height:64px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+      <a href="index.html" style="display:flex; align-items:center; gap:11px; text-decoration:none; white-space:nowrap;">
+        <span style="width:10px; height:10px; background:#ffcb05; border-radius:50%; display:inline-block;"></span>
+        <span style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:16px; color:#ffffff; letter-spacing:-0.01em;">Vasileios Tzoumas</span>
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.12em; color:#ffcb05; border:1px solid rgba(255,203,5,0.45); border-radius:3px; padding:2px 6px;">iRaL</span>
       </a>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" onclick="var l=document.getElementById('nav-links');var o=l.classList.toggle('open');this.classList.toggle('open',o);this.setAttribute('aria-expanded',o);">
-        <span></span><span></span><span></span>
-      </button>
-      <div id="nav-links" class="nav-links" style="display:flex; gap:1px; font-family:'IBM Plex Mono',monospace; font-size:12px; flex-wrap:wrap; justify-content:flex-end;">
-        <a href="index.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Home</a>
-        <a href="team.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Team</a>
-        <span style="padding:7px 12px; border-radius:4px; background:#3f9aa8; color:#0c1418; white-space:nowrap;">Publications</span>
-        <a href="teaching.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Teaching &amp; Service</a>
-        <a href="awards.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Awards &amp; Bio</a>
-        <a href="resources.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Resources</a>
+      <div style="display:flex; gap:2px; font-family:'IBM Plex Mono',monospace; font-size:12px; flex-wrap:wrap; justify-content:flex-end;">
+        <a href="index.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Home</a>
+        <a href="research.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Research</a>
+        <span style="padding:8px 13px; border-radius:4px; background:#ffcb05; color:#00274c; font-weight:500; white-space:nowrap;">Publications</span>
+        <a href="teaching.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Teaching</a>
+        <a href="group.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Group</a>
+        <a href="news.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">News &amp; Press</a>
+        <a href="resources.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Resources</a>
       </div>
     </div>
   </nav>
 
-  <header style="background:#14202a; color:#e7eef0; padding:56px 0 52px;">
-    <div style="max-width:1180px; margin:0 auto; padding:0 44px;">
-      <div style="display:flex; align-items:center; gap:12px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#5fb3c0; margin-bottom:20px;">
-        <span style="width:8px; height:8px; background:#3f9aa8; border-radius:50%; display:inline-block;"></span>Peer-reviewed research &amp; preprints
-      </div>
-      <div style="display:flex; justify-content:space-between; align-items:flex-end; gap:32px; flex-wrap:wrap;">
-        <h1 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:clamp(38px,5vw,64px); line-height:1.0; letter-spacing:-0.02em; margin:0;">Publications</h1>
-        <a href="https://scholar.google.com/citations?user=vzOOFNwAAAAJ&hl=en" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#0c1418; background:#3f9aa8; border-radius:5px; padding:9px 15px; text-decoration:none; white-space:nowrap;">Google Scholar ↗</a>
-      </div>
-      <div id="stats" style="display:flex; gap:14px; margin-top:30px; flex-wrap:wrap;"></div>
+  <header style="background:#ffcb05;">
+    <div style="max-width:1200px; margin:0 auto; padding:34px 40px 36px;">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#7a5a00; margin-bottom:12px;">Peer-Reviewed · Preprints</div>
+      <h1 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:clamp(40px,5.5vw,66px); line-height:1.0; letter-spacing:-0.025em; margin:0; color:#00274c;">Publications</h1>
     </div>
   </header>
 
-  <div style="max-width:1180px; margin:0 auto; padding:0 44px;">
-    <div id="pub-groups"></div>
+  <div style="max-width:1000px; margin:0 auto; padding:0 40px;">
 
-    <footer style="padding:48px 0 60px; margin-top:24px; display:flex; justify-content:space-between; border-top:1px solid #d4dadd; font-family:'IBM Plex Mono',monospace; font-size:11px; color:#7d888c; flex-wrap:wrap; gap:12px;">
+    <div style="display:flex; justify-content:space-between; align-items:baseline; margin:40px 0 8px; flex-wrap:wrap; gap:12px;">
+      <p style="font-size:15px; line-height:1.6; color:#566069; max-width:60ch; margin:0;">The full record, newest first. See <a href="https://scholar.google.com/citations?user=vzOOFNwAAAAJ&hl=en" style="color:#00274c; border-bottom:2px solid #ffcb05; text-decoration:none;">Google Scholar</a> for citations.</p>
+      <span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#00274c; background:#ffe27a; border-radius:4px; padding:5px 10px; white-space:nowrap;">{{ total }} papers</span>
+    </div>
+
+    <sc-for list="{{ groups }}" as="g" hint-placeholder-count="3">
+      <section style="padding:20px 0 8px;">
+        <div style="display:flex; align-items:baseline; gap:12px; position:sticky; top:64px; background:#f4f3ee; padding:14px 0 12px; z-index:5; border-bottom:2px solid #00274c; margin-bottom:6px;">
+          <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:20px; letter-spacing:-0.01em; margin:0; color:#00274c;">{{ g.label }}</h2>
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#98a1aa;">{{ g.count }}</span>
+        </div>
+        <sc-for list="{{ g.items }}" as="p" hint-placeholder-count="6">
+          <article style="display:grid; grid-template-columns:58px 1fr; gap:18px; padding:16px 0; border-bottom:1px solid #e7e4db;">
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#b8890a; padding-top:3px;">{{ p.year }}</div>
+            <div>
+              <a href="{{ p.url }}" style="font-family:'Space Grotesk',sans-serif; font-weight:500; font-size:17.5px; line-height:1.32; color:#14181c; text-decoration:none;" style-hover="color:#00274c;">{{ p.title }}</a>
+              <div style="font-size:13.5px; color:#566069; margin-top:6px;">{{ p.authors }}</div>
+              <div style="font-size:12.5px; color:#8a929a; margin-top:3px; font-style:italic;">{{ p.venueYear }}</div>
+              <sc-if value="{{ p.hasTag }}" hint-placeholder-val="{{ false }}">
+                <span style="display:inline-block; margin-top:9px; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#00274c; background:#ffe27a; border-radius:3px; padding:3px 9px;">{{ p.tag }}</span>
+              </sc-if>
+            </div>
+          </article>
+        </sc-for>
+      </section>
+    </sc-for>
+
+    <footer style="padding:44px 0 60px; margin-top:24px; display:flex; justify-content:space-between; border-top:1px solid #e2ded3; font-family:'IBM Plex Mono',monospace; font-size:11px; color:#8a8579; flex-wrap:wrap; gap:12px;">
       <span>3049 François-Xavier Bagnoud Building · Ann Arbor</span>
       <span>vtzoumas [at] umich.edu · he/him</span>
     </footer>
   </div>
 </div>
-
-<style>
-  .nav-toggle { display:none; background:none; border:0; padding:8px; margin:0; cursor:pointer; flex-direction:column; justify-content:center; gap:5px; }
-  .nav-toggle span { display:block; width:22px; height:2px; background:#cfdde1; border-radius:2px; transition:transform .2s ease, opacity .2s ease; }
-  .nav-toggle.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
-  .nav-toggle.open span:nth-child(2) { opacity:0; }
-  .nav-toggle.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
-  @media (max-width: 860px) {
-    .nav-toggle { display:inline-flex; }
-    .nav-links { display:none !important; position:absolute; top:100%; left:0; right:0; flex-direction:column !important; align-items:stretch !important; justify-content:flex-start !important; gap:2px !important; background:rgba(15,24,31,0.98); border-bottom:1px solid #2c3a40; padding:10px 22px 16px; box-shadow:0 14px 28px rgba(0,0,0,0.28); }
-    .nav-links.open { display:flex !important; }
-    .nav-links a, .nav-links span { padding:12px !important; border-radius:6px; font-size:14px !important; white-space:normal !important; }
-    nav > div, header > div, body > div > div { padding-left: 22px !important; padding-right: 22px !important; }
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const RAW = [
+      { label: 'Journal Publications & Preprints', items: [
+        { authors: 'J. C. Pacheco, A. Zhao, J. Xu, A. Navsalkar, A. Scheffer, S. Shankar, I. Bao, H. Zhou, V. Tzoumas', title: 'MorphQuad: Morphable Quadrotor for Superhuman Maneuverability, Manipulation, and Resiliency', venue: 'Preprint', year: '2026', url: '#', tag: 'Under review' },
+        { authors: 'Z. Xu, V. Tzoumas', title: 'Self-Configurable Mesh-Networks for Scalable Distributed Submodular Bandit Optimization', venue: 'Preprint', year: '2026', url: 'https://arxiv.org/pdf/2602.19366', tag: 'Under review' },
+        { authors: 'J. Bhargav, Z. Xu, V. Tzoumas, M. Ghasemi, S. Sundaram', title: 'Distributed Equilibrium-Seeking in Target Coverage Games via Self-Configurable Networks under Limited Communication', venue: 'Preprint', year: '2026', url: 'https://arxiv.org/pdf/2603.17335', tag: 'Under review' },
+        { authors: 'H. Zhou, X. Zhang, V. Tzoumas', title: 'Adaptive Legged Locomotion via Online Learning for Model Predictive Control', venue: 'IEEE Robotics and Automation Letters (RA-L)', year: '2025', url: 'https://arxiv.org/pdf/2510.15626', tag: '' },
+        { authors: 'H. Zhou, V. Tzoumas', title: 'Simultaneous System Identification and Model Predictive Control with No Dynamic Regret', venue: 'IEEE Transactions on Robotics (T-RO)', year: '2025', url: 'http://arxiv.org/abs/2407.04143', tag: '' },
+        { authors: 'Z. Xu, S. S. Garimella, V. Tzoumas', title: 'Communication- and Computation-Efficient Distributed Submodular Optimization in Robot Mesh Networks', venue: 'IEEE Transactions on Robotics (T-RO)', year: '2025', url: 'https://arxiv.org/abs/2407.10382', tag: '' },
+        { authors: 'H. Zhou, Y. Song, V. Tzoumas', title: 'Safe Non-Stochastic Control of Control-Affine Systems', venue: 'IEEE Robotics and Automation Letters (RA-L)', year: '2023', url: 'https://arxiv.org/abs/2309.16817', tag: '' },
+        { authors: 'Z. Xu, H. Zhou, V. Tzoumas', title: 'Online Submodular Coordination with Bounded Tracking Regret: Theory, Algorithm, and Application to Multi-Robot Coordination', venue: 'IEEE Robotics and Automation Letters (RA-L)', year: '2023', url: 'https://arxiv.org/abs/2209.12429', tag: '' },
+        { authors: 'L. Zhou, V. Tzoumas, P. Tokekar, G. J. Pappas', title: 'Distributed Attack-Robust Submodular Maximization for Multi-Robot Planning', venue: 'IEEE Transactions on Robotics (T-RO)', year: '2022', url: '', tag: '' },
+        { authors: 'V. Tzoumas, A. Jadbabaie, G. J. Pappas', title: 'Robust and Adaptive Sequential Submodular Optimization', venue: 'IEEE Transactions on Automatic Control (TAC)', year: '2022', url: 'http://arxiv.org/abs/1909.11783', tag: '' },
+        { authors: 'B. Schlotfeldt, V. Tzoumas, G. J. Pappas', title: 'Resilient Active Information Acquisition with Teams of Robots', venue: 'IEEE Transactions on Robotics (T-RO)', year: '2022', url: 'https://www.researchgate.net/publication/349086237_Resilient_Active_Information_Acquisition_with_Teams_of_Robots', tag: '' },
+        { authors: 'P. Antonante, V. Tzoumas, H. Yang, L. Carlone', title: 'Outlier-Robust Estimation: Hardness, Minimally-Tuned Algorithms, and Applications', venue: 'IEEE Transactions on Robotics (T-RO)', year: '2022', url: 'https://arxiv.org/pdf/2007.15109.pdf', tag: '' },
+        { authors: 'V. Tzoumas, L. Carlone, G. J. Pappas, A. Jadbabaie', title: 'LQG Control and Sensing Co-Design', venue: 'IEEE Transactions on Automatic Control (TAC)', year: '2021', url: 'https://arxiv.org/abs/1802.08376', tag: '' },
+        { authors: 'H. Yang, P. Antonante, V. Tzoumas, L. Carlone', title: 'Graduated Non-Convexity for Robust Spatial Perception: From Non-Minimal Solvers to Global Outlier Rejection', venue: 'IEEE Robotics and Automation Letters (RA-L)', year: '2020', url: 'http://arxiv.org/abs/1909.08605', tag: 'Honorable Mention, RA-L 2020' },
+        { authors: 'L. Zhou, V. Tzoumas, G. J. Pappas, P. Tokekar', title: 'Resilient Active Target Tracking with Multiple Robots', venue: 'IEEE Robotics and Automation Letters (RA-L) + ICRA', year: '2019', url: 'https://arxiv.org/abs/1809.04032', tag: '' },
+        { authors: 'A. Jadbabaie, A. Olshevsky, G. J. Pappas, V. Tzoumas', title: 'Minimal Reachability is Hard to Approximate', venue: 'IEEE Transactions on Automatic Control (TAC)', year: '2019', url: 'https://arxiv.org/abs/1710.10244', tag: '' },
+        { authors: 'V. Tzoumas, Y. Xue, S. Pequito, P. Bogdan, G. J. Pappas', title: 'Selecting Sensors in Biological Fractional-Order Systems', venue: 'IEEE Transactions on Control of Network Systems (TCNS)', year: '2018', url: 'https://ieeexplore.ieee.org/document/8302921', tag: '' },
+        { authors: 'V. Tzoumas, M. A. Rahimian, G. J. Pappas, A. Jadbabaie', title: 'Minimal Actuator Placement with Bounds on Control Effort', venue: 'IEEE Transactions on Control of Network Systems (TCNS)', year: '2016', url: 'https://ieeexplore.ieee.org/document/7122316', tag: '' },
+      ]},
+      { label: 'Conference Publications & Preprints', items: [
+        { authors: 'A. Navsalkar, H. Zhou, V. Tzoumas', title: 'Self-Adaptive Learning and Model Predictive Control for Tracking Unknown Dynamics with No Regret', venue: 'Preprint', year: '2026', url: '', tag: 'Under review' },
+        { authors: 'P. Sharma, R. Xu, V. Tzoumas', title: 'Asynchronous Distributed Bandit Submodular Maximization under Heterogeneous Communication Delays', venue: 'Preprint', year: '2026', url: '', tag: 'Under review · Invited' },
+        { authors: 'Z. Xu, V. Tzoumas', title: 'Distributed Online Submodular Maximization under Communication Delays: A Simultaneous Decision-Making Approach', venue: 'American Control Conference (ACC)', year: '2026', url: 'https://arxiv.org/pdf/2603.27803', tag: '' },
+        { authors: 'I. Bao, J. C. Díaz Peón González Pacheco, A. Navsalkar, A. Scheffer, S. Shankar, A. Zhao, H. Zhou, V. Tzoumas', title: 'MorphEUS: Morphable Omnidirectional Unmanned System', venue: 'ICRA Workshop on Open Challenges in Robotics for Asset Inspection', year: '2025', url: 'https://arxiv.org/abs/2505.18270', tag: '' },
+        { authors: 'X. Zhang, P. Zhang, X. Xiao, S. Li, V. Tzoumas, V. Gupta, P. Bogdan', title: 'End-to-End Learning Framework for Solving Non-Markovian Optimal Control', venue: 'International Conference on Machine Learning (ICML)', year: '2025', url: 'https://arxiv.org/abs/2502.04649', tag: '' },
+        { authors: 'H. Zhou, V. Tzoumas', title: 'No-Regret Model Predictive Control with Online Learning of Koopman Operators', venue: 'American Control Conference (ACC)', year: '2025', url: 'https://arxiv.org/abs/2504.15805', tag: '' },
+        { authors: 'Z. Xu, V. Tzoumas', title: 'Performance-Aware Self-Configurable Multi-Agent Networks: A Distributed Submodular Approach', venue: 'IEEE Conference on Decision and Control (CDC)', year: '2024', url: 'https://www.researchgate.net/publication/380000620', tag: 'Invited' },
+        { authors: 'Z. Xu, X. Lin, V. Tzoumas', title: 'Leveraging Untrustworthy Commands for Multi-Robot Coordination in Unpredictable Environments', venue: 'American Control Conference (ACC)', year: '2024', url: 'https://arxiv.org/abs/2309.16161', tag: '' },
+        { authors: 'H. Zhou, Z. Xu, V. Tzoumas', title: 'Efficient Online Learning with Memory via Frank-Wolfe Optimization', venue: 'IEEE Conference on Decision and Control (CDC)', year: '2023', url: 'https://scholar.google.com/citations?user=vzOOFNwAAAAJ', tag: '' },
+        { authors: 'H. Zhou, V. Tzoumas', title: 'Safe Non-Stochastic Control of Linear Dynamical Systems', venue: 'IEEE Conference on Decision and Control (CDC)', year: '2023', url: 'https://arxiv.org/pdf/2308.12395', tag: 'Invited' },
+        { authors: 'H. Zhou, V. Tzoumas', title: 'Safe Perception-Based Control with Minimal Worst-Case Dynamic Regret', venue: 'IEEE Conference on Decision and Control (CDC)', year: '2023', url: 'https://arxiv.org/abs/2208.08929', tag: '' },
+        { authors: 'Z. Xu, X. Lin, V. Tzoumas', title: 'Bandit Submodular Maximization for Multi-Robot Coordination in Unpredictable and Partially Observable Environments', venue: 'Robotics: Science and Systems (RSS)', year: '2023', url: 'https://arxiv.org/pdf/2305.12795', tag: '' },
+        { authors: 'Z. Xu, V. Tzoumas', title: 'Resource-Aware Distributed Submodular Maximization: A Paradigm for Multi-Robot Decision-Making', venue: 'IEEE Conference on Decision and Control (CDC)', year: '2022', url: 'https://arxiv.org/pdf/2204.07520', tag: 'Invited' },
+        { authors: 'H. Yang, P. Antonante, V. Tzoumas, L. Carlone', title: 'Graduated Non-Convexity for Robust Spatial Perception', venue: 'IEEE International Conference on Robotics and Automation (ICRA)', year: '2020', url: 'http://arxiv.org/abs/1909.08605', tag: 'Best Paper Award in Robotic Vision, ICRA 2020' },
+        { authors: 'L. Zhou, V. Tzoumas, P. Tokekar, G. J. Pappas', title: 'Distributed Attack-Robust Submodular Maximization for Multi-Robot Planning', venue: 'IEEE International Conference on Robotics and Automation (ICRA)', year: '2020', url: '', tag: '' },
+        { authors: 'V. Tzoumas, P. Antonante, L. Carlone', title: 'Outlier-Robust Spatial Perception: Hardness, General-Purpose Algorithms, and Guarantees', venue: 'IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems (IROS)', year: '2019', url: 'https://arxiv.org/pdf/1903.11683.pdf', tag: '' },
+        { authors: 'V. Tzoumas, A. Jadbabaie, G. J. Pappas', title: 'Resilient Monotone Sequential Maximization', venue: 'IEEE Conference on Decision and Control (CDC)', year: '2018', url: 'https://arxiv.org/abs/1803.07954', tag: 'Invited' },
+        { authors: 'B. Schlotfeldt, V. Tzoumas, D. Thakur, G. J. Pappas', title: 'Resilient Active Information Gathering with Mobile Robots', venue: 'IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems (IROS)', year: '2018', url: 'https://ieeexplore.ieee.org/document/8593630', tag: '' },
+        { authors: 'V. Tzoumas, L. Carlone, G. J. Pappas, A. Jadbabaie', title: 'Sensing-Constrained LQG Control', venue: 'American Control Conference (ACC)', year: '2018', url: 'https://arxiv.org/abs/1709.08826', tag: 'Invited' },
+        { authors: 'V. Tzoumas, K. Gatsis, A. Jadbabaie, G. J. Pappas', title: 'Resilient Monotone Submodular Function Maximization', venue: 'IEEE Conference on Decision and Control (CDC)', year: '2017', url: 'https://arxiv.org/abs/1703.07280', tag: 'Invited · Best Student Paper Finalist' },
+        { authors: 'V. Tzoumas, N. A. Atanasov, A. Jadbabaie, G. J. Pappas', title: 'Scheduling Nonlinear Sensors for Stochastic Process Estimation', venue: 'American Control Conference (ACC)', year: '2017', url: 'https://arxiv.org/abs/1609.08536', tag: '' },
+        { authors: 'V. Tzoumas, A. Jadbabaie, G. J. Pappas', title: 'Near-Optimal Sensor Scheduling for Batch State Estimation', venue: 'IEEE Conference on Decision and Control (CDC)', year: '2016', url: 'https://arxiv.org/abs/1608.07533', tag: 'Invited' },
+        { authors: 'V. Tzoumas, A. Jadbabaie, G. J. Pappas', title: 'Sensor Placement for Optimal Kalman Filtering: Fundamental Limits, Submodularity, and Algorithms', venue: 'American Control Conference (ACC)', year: '2016', url: 'http://arxiv.org/abs/1509.08146', tag: 'Invited · Best in Session' },
+        { authors: 'V. Tzoumas, A. Jadbabaie, G. J. Pappas', title: 'Minimal Reachability Problems', venue: 'IEEE Conference on Decision and Control (CDC)', year: '2015', url: 'http://arxiv.org/abs/1503.07021', tag: '' },
+        { authors: 'V. Tzoumas, M. A. Rahimian, G. J. Pappas, A. Jadbabaie', title: 'Minimal Actuator Placement with Optimal Control Constraints', venue: 'American Control Conference (ACC)', year: '2015', url: 'http://arxiv.org/abs/1503.04693', tag: 'Best in Session' },
+        { authors: 'V. Tzoumas, C. Amanatidis, E. Markakis', title: 'A Game-Theoretic Analysis of a Competitive Diffusion Process over Social Networks', venue: 'Conference on Web and Internet Economics (WINE)', year: '2012', url: 'http://pages.cs.aueb.gr/~markakis/research/wine12-cam-ready.pdf', tag: '' },
+      ]},
+      { label: 'STEM Education Publications', items: [
+        { authors: 'L. Carlone, K. Khosoussi, V. Tzoumas, G. Habibi, M. Ryll, R. Talak, J. Shi, P. Antonante', title: 'Visual Navigation for Autonomous Vehicles: An Open-source Hands-on Robotics Course at MIT', venue: 'IEEE Integrated STEM Education Conference (ISEC)', year: '2022', url: '', tag: '' },
+      ]},
+    ];
+    const groups = RAW.map(g => ({
+      label: g.label,
+      count: g.items.length,
+      items: g.items.map(it => ({
+        year: it.year,
+        title: it.title,
+        authors: it.authors,
+        venueYear: it.venue + ' · ' + it.year,
+        url: it.url || '#',
+        tag: it.tag,
+        hasTag: !!it.tag,
+      })),
+    }));
+    const total = RAW.reduce((n, g) => n + g.items.length, 0);
+    return { groups, total };
   }
-</style>
-
-<script type="module">
-import { PUB_GROUPS, PUB_TOTAL } from './pubs-data.js';
-
-const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const $ = (id) => document.getElementById(id);
-
-// --- Header stats ---
-const journal = PUB_GROUPS.find((g) => /journal/i.test(g.label));
-const conf = PUB_GROUPS.find((g) => /conference/i.test(g.label));
-const stats = [
-  { n: PUB_TOTAL || '—', label: 'Total papers' },
-  { n: journal ? journal.count : '—', label: 'Journal & preprints' },
-  { n: conf ? conf.count : '—', label: 'Conference papers' },
-];
-$('stats').innerHTML = stats.map((s) =>
-  `<div style="border:1px solid #2c3a40; border-radius:7px; padding:14px 20px; min-width:120px;">
-     <div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:30px; color:#e7eef0; line-height:1;">${esc(s.n)}</div>
-     <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase; color:#7d9298; margin-top:7px;">${esc(s.label)}</div>
-   </div>`
-).join('');
-
-// --- Publication groups ---
-$('pub-groups').innerHTML = PUB_GROUPS.map((group) => {
-  const items = group.items.map((pub) => {
-    const titleEl = pub.hasUrl
-      ? `<a href="${esc(pub.url)}" style="font-family:'Space Grotesk',sans-serif; font-weight:500; font-size:18.5px; line-height:1.32; color:#15181b; text-decoration:none; letter-spacing:-0.005em;">${esc(pub.title)}</a>`
-      : `<span style="font-family:'Space Grotesk',sans-serif; font-weight:500; font-size:18.5px; line-height:1.32; color:#15181b; letter-spacing:-0.005em;">${esc(pub.title)}</span>`;
-    const tagEl = pub.hasTag
-      ? `<span style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#0c1418; background:#cde4e8; border-radius:3px; padding:3px 8px; white-space:nowrap;">${esc(pub.tag)}</span>`
-      : '';
-    const linkEl = pub.hasUrl
-      ? `<a href="${esc(pub.url)}" style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:#3f8d9a; text-decoration:none; white-space:nowrap; margin-left:auto;">→ paper</a>`
-      : '';
-    return `<article style="display:grid; grid-template-columns:60px 1fr; gap:20px; background:#fff; border:1px solid #dde2e4; border-radius:8px; padding:18px 20px; align-items:start;">
-      <div style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:#3f8d9a; padding-top:3px; font-weight:500;">${esc(pub.year)}</div>
-      <div>
-        ${titleEl}
-        <div style="font-size:14px; color:#5a666b; margin-top:7px;">${esc(pub.authors)}</div>
-        <div style="display:flex; gap:10px; align-items:center; margin-top:10px; flex-wrap:wrap;">
-          <span style="font-size:12.5px; color:#8a979c; font-style:italic;">${esc(pub.venue)}</span>
-          ${tagEl}
-          ${linkEl}
-        </div>
-      </div>
-    </article>`;
-  }).join('');
-  return `<section style="padding:46px 0 12px;">
-    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:22px; border-bottom:1px solid #c8d0d3; padding-bottom:16px;">
-      <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:26px; letter-spacing:-0.01em; margin:0;">${esc(group.label)}</h2>
-      <span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#7d888c; white-space:nowrap;">${group.count} papers</span>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:12px;">${items}</div>
-  </section>`;
-}).join('');
+}
 </script>
 </body>
 </html>

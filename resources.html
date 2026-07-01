@@ -1,141 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Resources — Intelligent Robotics &amp; Autonomy Lab (iRaL)</title>
-<meta name="description" content="A curated set of resources for students and mentees — on embarking research, communication, well-being, and faculty applications — from Vasileios Tzoumas (iRaL).">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
-  body { background: #e9ecee; }
-  ::selection { background: #b6d4d9; }
+  body { background: #f4f3ee; }
+  ::selection { background: #ffe27a; }
   a { color: inherit; }
 </style>
-</head>
-<body>
-<div style="font-family:'IBM Plex Sans',sans-serif; color:#15181b; background:#e9ecee; min-height:100vh; -webkit-font-smoothing:antialiased;">
+</helmet>
 
-  <nav style="position:sticky; top:0; z-index:40; background:rgba(18,29,38,0.94); backdrop-filter:blur(10px); border-bottom:1px solid #2c3a40;">
-    <div style="max-width:1180px; margin:0 auto; padding:0 44px; height:58px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
-      <a href="index.html" style="display:flex; align-items:center; gap:10px; text-decoration:none; white-space:nowrap;">
-        <span style="width:9px; height:9px; background:#3f9aa8; border-radius:50%; display:inline-block;"></span>
-        <span style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:15px; color:#e7eef0;">Vasileios Tzoumas</span>
-        <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.1em; color:#5fb3c0; border:1px solid #2c5460; border-radius:3px; padding:2px 6px;">iRaL</span>
+<div style="font-family:'IBM Plex Sans',sans-serif; color:#14181c; background:#f4f3ee; min-height:100vh; -webkit-font-smoothing:antialiased;">
+
+  <nav style="position:sticky; top:0; z-index:40; background:#00274c; border-bottom:3px solid #ffcb05;">
+    <div style="max-width:1200px; margin:0 auto; padding:0 40px; height:64px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+      <a href="index.html" style="display:flex; align-items:center; gap:11px; text-decoration:none; white-space:nowrap;">
+        <span style="width:10px; height:10px; background:#ffcb05; border-radius:50%; display:inline-block;"></span>
+        <span style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:16px; color:#ffffff; letter-spacing:-0.01em;">Vasileios Tzoumas</span>
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.12em; color:#ffcb05; border:1px solid rgba(255,203,5,0.45); border-radius:3px; padding:2px 6px;">iRaL</span>
       </a>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" onclick="var l=document.getElementById('nav-links');var o=l.classList.toggle('open');this.classList.toggle('open',o);this.setAttribute('aria-expanded',o);">
-        <span></span><span></span><span></span>
-      </button>
-      <div id="nav-links" class="nav-links" style="display:flex; gap:1px; font-family:'IBM Plex Mono',monospace; font-size:12px; flex-wrap:wrap; justify-content:flex-end;">
-        <a href="index.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Home</a>
-        <a href="team.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Team</a>
-        <a href="publications.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Publications</a>
-        <a href="teaching.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Teaching &amp; Service</a>
-        <a href="awards.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Awards &amp; Bio</a>
-        <span style="padding:7px 12px; border-radius:4px; background:#3f9aa8; color:#0c1418; white-space:nowrap;">Resources</span>
+      <div style="display:flex; gap:2px; font-family:'IBM Plex Mono',monospace; font-size:12px; flex-wrap:wrap; justify-content:flex-end;">
+        <a href="index.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Home</a>
+        <a href="research.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Research</a>
+        <a href="publications.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Publications</a>
+        <a href="teaching.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Teaching</a>
+        <a href="group.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Group</a>
+        <a href="news.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">News &amp; Press</a>
+        <span style="padding:8px 13px; border-radius:4px; background:#ffcb05; color:#00274c; font-weight:500; white-space:nowrap;">Resources</span>
       </div>
     </div>
   </nav>
 
-  <header style="background:#14202a; color:#e7eef0; padding:56px 0 52px;">
-    <div style="max-width:1180px; margin:0 auto; padding:0 44px;">
-      <div style="display:flex; align-items:center; gap:12px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#5fb3c0; margin-bottom:20px;">
-        <span style="width:8px; height:8px; background:#3f9aa8; border-radius:50%; display:inline-block;"></span>For students &amp; mentees
-      </div>
-      <h1 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:clamp(38px,5vw,64px); line-height:1.0; letter-spacing:-0.02em; margin:0 0 26px;">Resources</h1>
-      <div style="border-left:2px solid #3f9aa8; padding:4px 0 4px 20px; max-width:60ch;">
-        <p style="font-family:'Space Grotesk',sans-serif; font-weight:400; font-size:19px; line-height:1.6; color:#d6e2e5; margin:0; text-wrap:pretty;">"[…] to learn in the process the values of endurance, courage, and strength of purpose."</p>
-        <p style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#7d9298; margin:12px 0 0;">— John W. Gardner</p>
-      </div>
+  <header style="background:#ffcb05;">
+    <div style="max-width:1200px; margin:0 auto; padding:34px 40px 36px;">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#7a5a00; margin-bottom:12px;">For Students &amp; Researchers</div>
+      <h1 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:clamp(40px,5.5vw,66px); line-height:1.0; letter-spacing:-0.025em; margin:0; color:#00274c;">Resources for Students</h1>
     </div>
   </header>
 
-  <div style="max-width:1180px; margin:0 auto; padding:40px 44px 0;">
-    <div id="categories" class="cat-grid" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(420px,1fr)); gap:24px; align-items:start;"></div>
+  <div style="max-width:1100px; margin:0 auto; padding:0 40px;">
 
-    <footer style="padding:48px 0 60px; margin-top:24px; display:flex; justify-content:space-between; border-top:1px solid #d4dadd; font-family:'IBM Plex Mono',monospace; font-size:11px; color:#7d888c; flex-wrap:wrap; gap:12px;">
+    <p style="font-size:18px; line-height:1.6; color:#2b3138; max-width:70ch; margin:44px 0 24px;">A living collection of resources on <strong style="color:#00274c;">embarking on research</strong>, <strong style="color:#00274c;">communication</strong>, <strong style="color:#00274c;">well-being</strong>, and <strong style="color:#00274c;">faculty applications</strong> — gathered from mentors and colleagues I have learned from.</p>
+
+    <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:8px;">
+      <sc-for list="{{ sections }}" as="s" hint-placeholder-count="4">
+        <a href="{{ s.anchor }}" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#00274c; text-decoration:none; background:#ffffff; border:1px solid #e7e4db; border-radius:20px; padding:7px 15px; white-space:nowrap;" style-hover="border-color:#ffcb05;">{{ s.jump }}</a>
+      </sc-for>
+    </div>
+
+    <sc-for list="{{ sections }}" as="s" hint-placeholder-count="4">
+      <section id="{{ s.id }}" style="padding:38px 0 8px; border-top:1px solid #e2ded3; scroll-margin-top:80px;">
+        <div style="display:flex; align-items:baseline; gap:14px; margin-bottom:6px;">
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:500; color:#b8890a;">{{ s.num }}</span>
+          <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:28px; letter-spacing:-0.01em; margin:0; color:#00274c;">{{ s.title }}</h2>
+        </div>
+        <sc-if value="{{ s.hasQuote }}" hint-placeholder-val="{{ false }}">
+          <blockquote style="font-family:'IBM Plex Mono',monospace; font-size:13.5px; line-height:1.6; color:#566069; background:#efeee6; border-left:4px solid #ffcb05; border-radius:0 8px 8px 0; padding:16px 20px; margin:16px 0 4px; max-width:66ch;">{{ s.quote }}</blockquote>
+        </sc-if>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:14px; margin-top:22px;">
+          <sc-for list="{{ s.items }}" as="it" hint-placeholder-count="6">
+            <a href="{{ it.url }}" target="_blank" style="display:block; background:#ffffff; border:1px solid #e7e4db; border-radius:10px; padding:18px 20px; text-decoration:none;" style-hover="border-color:#ffcb05;">
+              <div style="font-family:'Space Grotesk',sans-serif; font-weight:500; font-size:16px; line-height:1.32; color:#00274c; margin-bottom:6px;">{{ it.title }}</div>
+              <div style="font-size:13px; line-height:1.5; color:#7d888c;">{{ it.by }}</div>
+              <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#b8890a; margin-top:12px;">open ↗</div>
+            </a>
+          </sc-for>
+        </div>
+      </section>
+    </sc-for>
+
+    <footer style="padding:44px 0 60px; margin-top:24px; display:flex; justify-content:space-between; border-top:1px solid #e2ded3; font-family:'IBM Plex Mono',monospace; font-size:11px; color:#8a8579; flex-wrap:wrap; gap:12px;">
       <span>3049 François-Xavier Bagnoud Building · Ann Arbor</span>
       <span>vtzoumas [at] umich.edu · he/him</span>
     </footer>
   </div>
 </div>
-
-<style>
-  .nav-toggle { display:none; background:none; border:0; padding:8px; margin:0; cursor:pointer; flex-direction:column; justify-content:center; gap:5px; }
-  .nav-toggle span { display:block; width:22px; height:2px; background:#cfdde1; border-radius:2px; transition:transform .2s ease, opacity .2s ease; }
-  .nav-toggle.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
-  .nav-toggle.open span:nth-child(2) { opacity:0; }
-  .nav-toggle.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
-  @media (max-width: 860px) {
-    .nav-toggle { display:inline-flex; }
-    .nav-links { display:none !important; position:absolute; top:100%; left:0; right:0; flex-direction:column !important; align-items:stretch !important; justify-content:flex-start !important; gap:2px !important; background:rgba(15,24,31,0.98); border-bottom:1px solid #2c3a40; padding:10px 22px 16px; box-shadow:0 14px 28px rgba(0,0,0,0.28); }
-    .nav-links.open { display:flex !important; }
-    .nav-links a, .nav-links span { padding:12px !important; border-radius:6px; font-size:14px !important; white-space:normal !important; }
-    .cat-grid { grid-template-columns: 1fr !important; }
-    nav > div, header > div, body > div > div { padding-left: 22px !important; padding-right: 22px !important; }
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const sections = [
+      {
+        id: 'embarking-research', anchor: '#embarking-research', num: '01', jump: 'Embarking Research',
+        title: 'Embarking on Research', hasQuote: true,
+        quote: '"[...] to learn in the process the values of endurance, courage, and strength of purpose." — John W. Gardner',
+        items: [
+          { title: 'Being comfortable to feel stupid', by: 'Martin A. Schwartz', url: 'http://dx.doi.org/10.1242/jcs.033340' },
+          { title: 'Imposter syndrome', by: 'Michael Price', url: 'http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2013_09_04/caredit.a1300188' },
+          { title: 'Mindset: The New Psychology of Success', by: 'Carol S. Dweck', url: 'https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/' },
+          { title: 'Dump the Myth of the High Achiever', by: 'John Donahoe / Luke Stangel', url: 'https://www.gsb.stanford.edu/insights/john-donahoe-dump-myth-high-achiever' },
+          { title: 'On Leadership', by: 'John W. Gardner', url: 'https://www.google.com/books/edition/On_Leadership/NxXGFwDhLicC?hl=en&gbpv=0' },
+          { title: 'Tutorials & Presentations', by: 'Dennis S. Bernstein', url: 'https://dsbaero.engin.umich.edu/tutorials-presentations/' },
+          { title: 'Statement of Values & Honor Code', by: 'U-M College of Engineering', url: 'https://strategicvision.engin.umich.edu/our-vision/our-values' },
+          { title: 'How to Do Gradschool (podcast)', by: 'Nosa Edoimioya', url: 'https://www.how2dogradschool.com/' },
+        ],
+      },
+      {
+        id: 'communication', anchor: '#communication', num: '02', jump: 'Communication',
+        title: 'Communication', hasQuote: false,
+        items: [
+          { title: 'How to Give a Great Research Talk', by: 'Simon Peyton Jones', url: 'https://www.microsoft.com/en-us/research/academic-program/give-great-research-talk/' },
+          { title: 'How to Write a Great Research Paper', by: 'Simon Peyton Jones', url: 'https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/' },
+          { title: 'How To Speak', by: 'Patrick Winston', url: 'https://www.youtube.com/watch?v=Unzc731iCUY' },
+          { title: 'The Pyramid Principle: Logic in Writing and Thinking', by: 'Barbara Minto', url: 'https://books.google.com/books/about/The_Pyramid_Principle.html?id=VseP7-7hCNYC' },
+          { title: 'On Paper Writing', by: 'John Tsitsiklis', url: 'https://www.mit.edu/~jnt/write.html' },
+          { title: 'Personal Reflections on How to Write', by: 'Duncan Watts', url: 'https://sociologica.unibo.it/article/view/14863' },
+          { title: 'Tutorials & Presentations', by: 'Dennis S. Bernstein', url: 'https://dsbaero.engin.umich.edu/tutorials-presentations/' },
+        ],
+      },
+      {
+        id: 'wholesomeness-well-being', anchor: '#wholesomeness-well-being', num: '03', jump: 'Well-Being',
+        title: 'Well-Being', hasQuote: false,
+        items: [
+          { title: 'Mentoring Handbook & Ann Arbor guides', by: 'Rackham Graduate School', url: 'https://rackham.umich.edu/downloads/student-mentoring-handbook.pdf' },
+          { title: 'Counseling and Psychological Services (CAPS)', by: 'University of Michigan', url: 'https://caps.umich.edu/' },
+          { title: 'SilverCloud — online mental-health support', by: 'University of Michigan', url: 'https://umich.silvercloudhealth.com/' },
+          { title: 'C.A.R.E. Center', by: 'Michigan Engineering', url: 'https://care.engin.umich.edu/' },
+          { title: 'On diversity, research life, activism & more', by: 'Radhika Nagpal', url: 'https://www.radhikanagpal.org/activism.html' },
+          { title: 'On Stereotype Threat and Identity Threat', by: 'Claude M. Steele', url: 'https://www.youtube.com/watch?v=HKxkI2WVEWQ' },
+          { title: 'Perfectionism, time management & procrastination', by: 'Ohio State University', url: 'https://dennislearningcenter.osu.edu/category/student-resources/' },
+          { title: 'Counseling the Procrastinator in Academic Settings', by: 'Schouwenburg et al. (eds.)', url: 'https://www.apa.org/pubs/books/4318009' },
+          { title: 'iProcrastinate Podcast', by: 'Timothy A. Pychyl', url: 'https://iprocrastinate.libsyn.com/' },
+        ],
+      },
+      {
+        id: 'faculty-applications', anchor: '#faculty-applications', num: '04', jump: 'Faculty Applications',
+        title: 'Faculty Applications', hasQuote: false,
+        items: [
+          { title: 'PhD life, internships & faculty job applications', by: 'Philip Guo', url: 'http://pgbovine.net/writings.htm' },
+          { title: 'Preparing for faculty job applications', by: 'Jelena Kovačević', url: 'http://www.jelenazk.com/preparing-for-the-academic-job-search-candidate-package/' },
+        ],
+      },
+    ];
+    return { sections };
   }
-</style>
-
-<script>
-const raw = [
-  { label: 'Embarking Research', items: [
-    { title: 'Being comfortable to feel stupid', by: 'Martin A. Schwartz', url: 'http://dx.doi.org/10.1242/jcs.033340' },
-    { title: 'Imposter syndrome', by: 'Michael Price', url: 'http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2013_09_04/caredit.a1300188' },
-    { title: 'Mindset: The New Psychology of Success', by: 'Carol S. Dweck', url: 'https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/' },
-    { title: 'Dump the Myth of the High Achiever', by: 'John Donahoe (Luke Stangel)', url: 'https://www.gsb.stanford.edu/insights/john-donahoe-dump-myth-high-achiever' },
-    { title: 'On Leadership', by: 'John W. Gardner', url: 'https://www.google.com/books/edition/On_Leadership/NxXGFwDhLicC?hl=en' },
-    { title: 'Tutorials & presentations', by: 'Dennis S. Bernstein', url: 'https://dsbaero.engin.umich.edu/tutorials-presentations/' },
-    { title: 'Statement of Values & Honor Code', by: 'U-M College of Engineering', url: 'https://strategicvision.engin.umich.edu/our-vision/our-values' },
-    { title: 'How to Do Gradschool (podcast)', by: 'Nosa Edoimioya', url: 'https://www.how2dogradschool.com/' },
-  ]},
-  { label: 'Communication', items: [
-    { title: 'How to Give a Great Research Talk', by: 'Simon Peyton Jones', url: 'https://www.microsoft.com/en-us/research/academic-program/give-great-research-talk/' },
-    { title: 'How to Write a Great Research Paper', by: 'Simon Peyton Jones', url: 'https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/' },
-    { title: 'How To Speak', by: 'Patrick Winston', url: 'https://www.youtube.com/watch?v=Unzc731iCUY' },
-    { title: 'The Pyramid Principle: Logic in Writing and Thinking', by: 'Barbara Minto', url: 'https://books.google.com/books/about/The_Pyramid_Principle.html?id=VseP7-7hCNYC' },
-    { title: 'On paper writing', by: 'John Tsitsiklis', url: 'https://www.mit.edu/~jnt/write.html' },
-    { title: 'Personal reflections on how to write', by: 'Duncan Watts', url: 'https://sociologica.unibo.it/article/view/14863' },
-  ]},
-  { label: 'Well-Being', items: [
-    { title: 'Mentoring resources & handbook', by: 'Rackham Graduate School', url: 'https://rackham.umich.edu/downloads/student-mentoring-handbook.pdf' },
-    { title: 'Counseling and Psychological Services', by: 'CAPS, U-Michigan', url: 'https://caps.umich.edu/' },
-    { title: 'SilverCloud', by: 'U-Michigan online support', url: 'https://umich.silvercloudhealth.com/' },
-    { title: 'C.A.R.E. Center', by: 'Michigan Engineering', url: 'https://care.engin.umich.edu/' },
-    { title: 'On diversity, research life, activism, and more', by: 'Radhika Nagpal', url: 'https://www.radhikanagpal.org/activism.html' },
-    { title: 'On Stereotype Threat and Identity Threat', by: 'Claude M. Steele', url: 'https://www.youtube.com/watch?v=HKxkI2WVEWQ' },
-    { title: 'On perfectionism, time management, procrastination', by: 'Ohio State University', url: 'https://dennislearningcenter.osu.edu/category/student-resources/' },
-    { title: 'iProcrastinate Podcast', by: 'Timothy A. Pychyl', url: 'https://iprocrastinate.libsyn.com/' },
-  ]},
-  { label: 'Faculty Applications', items: [
-    { title: 'PhD life, internships, faculty job applications, and more', by: 'Philip Guo', url: 'http://pgbovine.net/writings.htm' },
-    { title: 'Preparing for faculty job applications', by: 'Jelena Kovačević', url: 'http://www.jelenazk.com/preparing-for-the-academic-job-search-candidate-package/' },
-  ]},
-];
-
-const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const $ = (id) => document.getElementById(id);
-
-$('categories').innerHTML = raw.map((cat) => {
-  const items = cat.items.map((r) =>
-    `<a href="${esc(r.url)}" style="display:flex; gap:14px; align-items:baseline; padding:13px 0; border-bottom:1px solid #f0f3f4; text-decoration:none;">
-       <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#3f9aa8; padding-top:2px;">↗</span>
-       <span style="flex:1;">
-         <span style="font-family:'Space Grotesk',sans-serif; font-weight:500; font-size:15.5px; line-height:1.4; color:#15181b; display:block;">${esc(r.title)}</span>
-         <span style="font-size:13px; color:#8a979c; display:block; margin-top:3px;">${esc(r.by)}</span>
-       </span>
-     </a>`
-  ).join('');
-  return `<section style="background:#fff; border:1px solid #dde2e4; border-radius:10px; padding:8px 26px 14px;">
-    <div style="display:flex; align-items:baseline; justify-content:space-between; padding:18px 0 6px; border-bottom:1px solid #e3e8ea; margin-bottom:6px;">
-      <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:21px; letter-spacing:-0.01em; margin:0;">${esc(cat.label)}</h2>
-      <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#9aa5a9;">${cat.items.length}</span>
-    </div>
-    ${items}
-  </section>`;
-}).join('');
+}
 </script>
 </body>
 </html>

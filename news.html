@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: #f4f3ee; }
+  ::selection { background: #ffe27a; }
+  a { color: inherit; }
+</style>
+</helmet>
+
+<div style="font-family:'IBM Plex Sans',sans-serif; color:#14181c; background:#f4f3ee; min-height:100vh; -webkit-font-smoothing:antialiased;">
+
+  <nav style="position:sticky; top:0; z-index:40; background:#00274c; border-bottom:3px solid #ffcb05;">
+    <div style="max-width:1200px; margin:0 auto; padding:0 40px; height:64px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+      <a href="index.html" style="display:flex; align-items:center; gap:11px; text-decoration:none; white-space:nowrap;">
+        <span style="width:10px; height:10px; background:#ffcb05; border-radius:50%; display:inline-block;"></span>
+        <span style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:16px; color:#ffffff; letter-spacing:-0.01em;">Vasileios Tzoumas</span>
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.12em; color:#ffcb05; border:1px solid rgba(255,203,5,0.45); border-radius:3px; padding:2px 6px;">iRaL</span>
+      </a>
+      <div style="display:flex; gap:2px; font-family:'IBM Plex Mono',monospace; font-size:12px; flex-wrap:wrap; justify-content:flex-end;">
+        <a href="index.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Home</a>
+        <a href="research.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Research</a>
+        <a href="publications.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Publications</a>
+        <a href="teaching.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Teaching</a>
+        <a href="group.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Group</a>
+        <span style="padding:8px 13px; border-radius:4px; background:#ffcb05; color:#00274c; font-weight:500; white-space:nowrap;">News &amp; Press</span>
+        <a href="resources.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Resources</a>
+      </div>
+    </div>
+  </nav>
+
+  <header style="background:#ffcb05;">
+    <div style="max-width:1200px; margin:0 auto; padding:34px 40px 36px;">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#7a5a00; margin-bottom:12px;">Lab Updates · In the Press</div>
+      <h1 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:clamp(40px,5.5vw,66px); line-height:1.0; letter-spacing:-0.025em; margin:0; color:#00274c;">News &amp; Press</h1>
+    </div>
+  </header>
+
+  <div style="max-width:1000px; margin:0 auto; padding:0 40px;">
+
+    <section style="padding:44px 0 8px;">
+      <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:28px; letter-spacing:-0.01em; margin:0 0 26px; color:#00274c;">Lab News</h2>
+      <div style="position:relative; padding-left:26px; border-left:2px solid #ffcb05;">
+        <sc-for list="{{ news }}" as="n" hint-placeholder-count="12">
+          <div style="position:relative; padding:0 0 26px;">
+            <span style="position:absolute; left:-33px; top:4px; width:11px; height:11px; background:#00274c; border:2px solid #ffcb05; border-radius:50%;"></span>
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.06em; color:#b8890a; margin-bottom:6px;">{{ n.date }}</div>
+            <div style="font-size:15.5px; line-height:1.55; color:#2b3138;">{{ n.text }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section style="padding:38px 0 8px; border-top:1px solid #e2ded3; margin-top:16px;">
+      <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:28px; letter-spacing:-0.01em; margin:0 0 8px; color:#00274c;">In the Press &amp; Software</h2>
+      <p style="font-size:15px; line-height:1.6; color:#566069; max-width:70ch; margin:0 0 24px;">Coverage of our work and open-source contributions in widely used tools.</p>
+      <div style="display:flex; flex-direction:column; gap:14px;">
+        <sc-for list="{{ press }}" as="p" hint-placeholder-count="3">
+          <a href="{{ p.url }}" style="display:block; background:#ffffff; border:1px solid #e7e4db; border-radius:10px; padding:20px 24px; text-decoration:none; border-left:4px solid #ffcb05;" style-hover="border-color:#ffcb05;">
+            <div style="font-family:'Space Grotesk',sans-serif; font-weight:500; font-size:17px; line-height:1.35; color:#00274c;">{{ p.title }}</div>
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:#b8890a; margin-top:8px;">{{ p.src }} →</div>
+          </a>
+        </sc-for>
+      </div>
+    </section>
+
+    <footer style="padding:44px 0 60px; margin-top:24px; display:flex; justify-content:space-between; border-top:1px solid #e2ded3; font-family:'IBM Plex Mono',monospace; font-size:11px; color:#8a8579; flex-wrap:wrap; gap:12px;">
+      <span>3049 François-Xavier Bagnoud Building · Ann Arbor</span>
+      <span>vtzoumas [at] umich.edu · he/him</span>
+    </footer>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const news = [
+      { date: '04 / 2026', text: 'New preprint introducing the Value of Collaboration metric for self-configurable mesh networks.' },
+      { date: '04 / 2026', text: 'Two new preprints on distributed target-coverage games and online submodular maximization (ACC).' },
+      { date: '01 / 2026', text: 'Invited seminar, 12th Midwest Workshop on Control & Game Theory. Associate Editor, IROS 2026.' },
+      { date: '12 / 2025', text: 'Adaptive Legged Locomotion via Online Learning for MPC accepted at IEEE RA-L.' },
+      { date: '09 / 2025', text: 'Jiawei Xu joins iRaL as a postdoc to work on the morphable quadrotor.' },
+      { date: '08 / 2025', text: 'Received the Army Early Career Program (ECP) Award.' },
+      { date: '06 / 2025', text: 'Awarded a Michigan MTRAC grant to continue the morphable quadrotor program.' },
+      { date: '05 / 2025', text: 'MorphEUS accepted at an ICRA workshop; End-to-End Non-Markovian Optimal Control at ICML.' },
+      { date: '04 / 2025', text: 'Three papers accepted — IEEE T-RO (×2) and ACC.' },
+      { date: '03 / 2025', text: 'Hongyu Zhou and Zirui Xu receive the Rackham Predoctoral Fellowship.' },
+      { date: '01 / 2025', text: 'Elevated to IEEE Senior Member; Associate Editor for IROS 2025.' },
+      { date: '08 / 2024', text: 'Received an NSF CAREER Award.' },
+      { date: '07 / 2024', text: 'Organized an invited CDC session on Submodularity in Control, Robotics & ML.' },
+      { date: '01 / 2024', text: 'Leveraging Untrustworthy Commands for Multi-Robot Coordination accepted to ACC 2024.' },
+    ];
+    const press = [
+      { title: 'MATLAB implementation of the 2020 ICRA Graduated Non-Convexity algorithm', src: 'MathWorks Navigation Toolbox', url: 'https://www.mathworks.com/help/nav/ref/trimloopclosures.html' },
+      { title: 'SLAM mapping algorithm for autonomous vehicles', src: 'MathWorks news article', url: 'https://www.mathworks.com/company/mathworks-stories/slam-mapping-algorithm-for-autonomous-vehicles.html' },
+      { title: '"Algorithms that protect" — interview', src: 'MIT LIDS|ALL Magazine, Vol. 5, 2019', url: 'https://lidsmag.lids.mit.edu/algorithms_that_protect.html' },
+    ];
+    return { news, press };
+  }
+}
+</script>
+</body>
+</html>

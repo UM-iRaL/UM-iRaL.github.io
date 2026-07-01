@@ -1,269 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vasileios Tzoumas — Intelligent Robotics &amp; Autonomy Lab (iRaL)</title>
-<meta name="description" content="Vasileios Tzoumas, Assistant Professor of Aerospace Engineering at the University of Michigan. Scalable, reliable algorithms for autonomous systems — the Intelligent Robotics &amp; Autonomy Lab (iRaL).">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
-  body { background: #e9ecee; }
-  ::selection { background: #b6d4d9; }
-  .draft-scroll::-webkit-scrollbar { width: 8px; }
-  .draft-scroll::-webkit-scrollbar-thumb { background: #c2cace; border-radius: 4px; }
+  body { background: #f4f3ee; }
+  ::selection { background: #ffe27a; }
   a { color: inherit; }
+  .scroll-thin::-webkit-scrollbar { width: 8px; }
+  .scroll-thin::-webkit-scrollbar-thumb { background: #d3cdbe; border-radius: 4px; }
 </style>
-</head>
-<body>
-<div style="font-family:'IBM Plex Sans',sans-serif; color:#15181b; background:#e9ecee; min-height:100vh; -webkit-font-smoothing:antialiased;">
+</helmet>
 
-  <nav style="position:sticky; top:0; z-index:40; background:rgba(18,29,38,0.94); backdrop-filter:blur(10px); border-bottom:1px solid #2c3a40;">
-    <div style="max-width:1180px; margin:0 auto; padding:0 44px; height:58px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
-      <a href="index.html" style="display:flex; align-items:center; gap:10px; text-decoration:none; white-space:nowrap;">
-        <span style="width:9px; height:9px; background:#3f9aa8; border-radius:50%; display:inline-block;"></span>
-        <span style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:15px; color:#e7eef0;">Vasileios Tzoumas</span>
-        <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.1em; color:#5fb3c0; border:1px solid #2c5460; border-radius:3px; padding:2px 6px;">iRaL</span>
+<div style="font-family:'IBM Plex Sans',sans-serif; color:#14181c; background:#f4f3ee; min-height:100vh; -webkit-font-smoothing:antialiased;">
+
+  <nav style="position:sticky; top:0; z-index:40; background:#00274c; border-bottom:3px solid #ffcb05;">
+    <div style="max-width:1200px; margin:0 auto; padding:0 40px; height:64px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+      <a href="index.html" style="display:flex; align-items:center; gap:11px; text-decoration:none; white-space:nowrap;">
+        <span style="width:10px; height:10px; background:#ffcb05; border-radius:50%; display:inline-block;"></span>
+        <span style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:16px; color:#ffffff; letter-spacing:-0.01em;">Vasileios Tzoumas</span>
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.12em; color:#ffcb05; border:1px solid rgba(255,203,5,0.45); border-radius:3px; padding:2px 6px;">iRaL</span>
       </a>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" onclick="var l=document.getElementById('nav-links');var o=l.classList.toggle('open');this.classList.toggle('open',o);this.setAttribute('aria-expanded',o);">
-        <span></span><span></span><span></span>
-      </button>
-      <div id="nav-links" class="nav-links" style="display:flex; gap:1px; font-family:'IBM Plex Mono',monospace; font-size:12px; flex-wrap:wrap; justify-content:flex-end;">
-        <span style="padding:7px 12px; border-radius:4px; background:#3f9aa8; color:#0c1418; white-space:nowrap;">Home</span>
-        <a href="team.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Team</a>
-        <a href="publications.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Publications</a>
-        <a href="teaching.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Teaching &amp; Service</a>
-        <a href="awards.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Awards &amp; Bio</a>
-        <a href="resources.html" style="padding:7px 12px; border-radius:4px; color:#9fb0b6; text-decoration:none; white-space:nowrap;">Resources</a>
+      <div style="display:flex; gap:2px; font-family:'IBM Plex Mono',monospace; font-size:12px; flex-wrap:wrap; justify-content:flex-end;">
+        <span style="padding:8px 13px; border-radius:4px; background:#ffcb05; color:#00274c; font-weight:500; white-space:nowrap;">Home</span>
+        <a href="research.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Research</a>
+        <a href="publications.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Publications</a>
+        <a href="teaching.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Teaching</a>
+        <a href="group.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Group</a>
+        <a href="news.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">News &amp; Press</a>
+        <a href="resources.html" style="padding:8px 13px; border-radius:4px; color:#c3cfdd; text-decoration:none; white-space:nowrap;">Resources</a>
       </div>
     </div>
   </nav>
 
-  <header style="background:#14202a; color:#e7eef0; padding:56px 0 0;">
-    <div style="max-width:1180px; margin:0 auto; padding:0 44px;">
-      <div style="display:flex; align-items:center; gap:12px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#5fb3c0; margin-bottom:22px;">
-        <span style="width:8px; height:8px; background:#3f9aa8; border-radius:50%; display:inline-block;"></span>Intelligent Robotics &amp; Autonomy Lab — iRaL
+  <header style="background:#00274c; color:#eaf0f6; position:relative; overflow:hidden;">
+    <div style="max-width:1200px; margin:0 auto; padding:64px 40px 0;">
+      <div style="display:flex; align-items:center; gap:12px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#ffcb05; margin-bottom:26px;">
+        <span style="width:8px; height:8px; background:#ffcb05; border-radius:50%; display:inline-block;"></span>Intelligent Robotics &amp; Autonomy Lab — iRaL
       </div>
-      <div class="hero-grid" style="display:grid; grid-template-columns:1fr 300px; gap:48px; align-items:end;">
-        <div style="padding-bottom:48px;">
-          <h1 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:clamp(40px,6vw,76px); line-height:1.0; letter-spacing:-0.02em; margin:0 0 22px;">Vasileios Tzoumas</h1>
-          <p style="font-size:17px; line-height:1.6; color:#aebec3; max-width:54ch; margin:0 0 26px;">Assistant Professor of Aerospace Engineering, University of Michigan, Ann Arbor. Scalable, reliable algorithms for autonomous systems that perceive, navigate, and collaborate in resource-constrained, contested environments.</p>
+      <div style="display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:48px; align-items:end;">
+        <div style="padding-bottom:52px;">
+          <h1 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:clamp(42px,6vw,78px); line-height:1.0; letter-spacing:-0.025em; margin:0 0 22px; color:#ffffff;">Vasileios Tzoumas</h1>
+          <p style="font-size:18px; line-height:1.6; color:#b7c6d6; max-width:56ch; margin:0 0 28px;">Assistant Professor of Aerospace Engineering at the University of Michigan, Ann Arbor. We build scalable, reliable algorithms for autonomous systems that perceive, navigate, and collaborate in resource-constrained, contested environments.</p>
           <div style="display:flex; flex-wrap:wrap; gap:10px;">
-            <a href="https://scholar.google.com/citations?user=vzOOFNwAAAAJ&hl=en" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#0c1418; background:#3f9aa8; border-radius:5px; padding:9px 15px; text-decoration:none; white-space:nowrap;">Google Scholar ↗</a>
-            <a href="https://www.dropbox.com/sh/rq6u5r26ahxs6mb/AACCgD1lE_sMpD3mApuvdgqCa?dl=0" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#cfdde1; border:1px solid #345059; border-radius:5px; padding:9px 15px; text-decoration:none;">CV ↗</a>
-            <a href="mailto:vtzoumas@umich.edu" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#cfdde1; border:1px solid #345059; border-radius:5px; padding:9px 15px; text-decoration:none;">vtzoumas@umich.edu</a>
+            <a href="https://scholar.google.com/citations?user=vzOOFNwAAAAJ&hl=en" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#00274c; background:#ffcb05; border-radius:5px; padding:10px 16px; text-decoration:none; font-weight:500; white-space:nowrap;">Google Scholar ↗</a>
+            <a href="https://www.dropbox.com/sh/rq6u5r26ahxs6mb/AACCgD1lE_sMpD3mApuvdgqCa?dl=0" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#00274c; background:#ffcb05; border-radius:5px; padding:10px 16px; text-decoration:none; font-weight:500; white-space:nowrap;">CV ↗</a>
+            <a href="mailto:vtzoumas@umich.edu" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#00274c; background:#ffcb05; border-radius:5px; padding:10px 16px; text-decoration:none; font-weight:500; white-space:nowrap;">vtzoumas@umich.edu</a>
           </div>
         </div>
-        <img src="https://vasileiostzoumas.com/wp-content/uploads/2019/12/cropped-tzoumasv-e1598209566428.jpg" alt="Vasileios Tzoumas" style="width:300px; height:300px; object-fit:cover; border:1px solid #2c3a40; border-top-left-radius:6px; border-top-right-radius:6px; display:block;">
+        <img src="https://vasileiostzoumas.com/wp-content/uploads/2019/12/cropped-tzoumasv-e1598209566428.jpg" alt="Vasileios Tzoumas" style="width:300px; height:320px; object-fit:cover; border-top-left-radius:8px; border-top-right-radius:8px; display:block; box-shadow:0 -2px 0 #ffcb05 inset;">
       </div>
     </div>
   </header>
 
-  <div style="max-width:1180px; margin:0 auto; padding:0 44px;">
+  <div style="max-width:1200px; margin:0 auto; padding:0 40px;">
 
-    <section class="two-col" style="display:grid; grid-template-columns:1fr 1fr; gap:56px; padding:56px 0; border-bottom:1px solid #d4dadd; align-items:start;">
+    <section style="display:grid; grid-template-columns:1.4fr 1fr; gap:56px; padding:60px 0 20px; align-items:start;">
       <div>
-        <h2 style="font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:#3f8d9a; margin:0 0 16px;">Research Focus</h2>
-        <p style="font-size:16.5px; line-height:1.7; color:#2b3338; margin:0 0 14px;">We research <strong>resource-aware, near-optimal algorithms</strong> for perception, control, and multi-agent coordination — and <strong>morphable aerial vehicles</strong> that grant superior control authority and situational awareness.</p>
-        <p style="font-size:15.5px; line-height:1.7; color:#5a666b; margin:0;">The work sits at the intersection of control, robotics, combinatorial optimization, and online learning, targeting systems in defense, disaster response, and smart cities. Previously: research scientist at MIT (AeroAstro &amp; LIDS), Ph.D. at the University of Pennsylvania (ESE).</p>
-      </div>
-      <div>
-        <h2 style="font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:#3f8d9a; margin:0 0 16px;">Recognition</h2>
-        <div id="honors" style="display:flex; flex-direction:column; gap:0;"></div>
-      </div>
-    </section>
-
-    <section class="two-col" style="display:grid; grid-template-columns:1fr 1fr; gap:56px; padding:56px 0; border-bottom:1px solid #d4dadd; align-items:start;">
-      <div style="background:#fff; border:1px solid #dde2e4; border-radius:8px; padding:18px;">
-        <img src="https://vasileiostzoumas.com/wp-content/uploads/2024/06/research-overview-iral.png" alt="iRaL research overview" style="width:100%; height:auto; display:block; border-radius:4px;">
-        <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.06em; color:#7d888c; margin-top:14px;">RESEARCH OVERVIEW — INTELLIGENT ROBOTICS &amp; AUTONOMY LAB</div>
+        <h2 style="font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:#b8890a; margin:0 0 18px;">About</h2>
+        <p style="font-size:17px; line-height:1.7; color:#2b3138; margin:0 0 16px;">We research <strong style="color:#00274c;">resource-aware, near-optimal algorithms</strong> for perception, control, and multi-agent coordination — and <strong style="color:#00274c;">morphable aerial vehicles</strong> that grant superior control authority and situational awareness.</p>
+        <p style="font-size:15.5px; line-height:1.7; color:#566069; margin:0;">Previously: research scientist at MIT (AeroAstro &amp; LIDS); Ph.D. at the University of Pennsylvania (ESE); M.A. in Statistics from Wharton; diploma from the National Technical University of Athens. Elevated to IEEE Senior Member in 2025.</p>
       </div>
       <div>
-        <div style="display:flex; justify-content:space-between; align-items:baseline; margin:0 0 18px;">
-          <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:28px; letter-spacing:-0.01em; margin:0;">Recent News</h2>
-          <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.04em; color:#3f8d9a; white-space:nowrap;">LATEST</span>
-        </div>
-        <div id="news" class="draft-scroll" style="max-height:520px; overflow-y:auto; padding:4px 16px 4px 20px; border-left:2px solid #3f9aa8; background:#fff; border:1px solid #dde2e4; border-radius:8px;"></div>
-      </div>
-    </section>
-
-    <section class="two-col" style="display:grid; grid-template-columns:repeat(2,1fr); gap:24px; padding:48px 0; border-bottom:1px solid #d4dadd;">
-      <div style="background:#fff; border:1px solid #dde2e4; border-radius:8px; padding:24px;">
-        <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#3f8d9a; margin-bottom:14px;">Collaborative Autonomy</div>
-        <div id="interests-collab"></div>
-      </div>
-      <div style="background:#fff; border:1px solid #dde2e4; border-radius:8px; padding:24px;">
-        <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#3f8d9a; margin-bottom:14px;">Applications</div>
-        <div id="interests-apps"></div>
-      </div>
-    </section>
-
-    <section style="padding:52px 0;">
-      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:28px;">
-        <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:34px; letter-spacing:-0.01em; margin:0;">Selected Publications</h2>
-        <span id="pub-count" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#7d888c; white-space:nowrap;"></span>
-      </div>
-      <div id="selected-pubs" style="display:flex; flex-direction:column; gap:14px;"></div>
-    </section>
-
-    <section style="padding:52px 0; border-top:1px solid #d4dadd;">
-      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:24px;">
-        <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:34px; letter-spacing:-0.01em; margin:0;">All Publications</h2>
-        <span id="pub-total" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#7d888c; white-space:nowrap;"></span>
-      </div>
-      <div id="all-pubs" class="draft-scroll" style="max-height:620px; overflow-y:auto; background:#fff; border:1px solid #dde2e4; border-radius:8px; padding:0 22px 8px;"></div>
-    </section>
-
-    <section style="padding:48px 0; border-top:1px solid #d4dadd;">
-      <div style="background:#14202a; color:#cddde1; border-radius:10px; padding:56px 48px; text-align:center;">
-        <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#5fb3c0; margin-bottom:24px;">Ithaca · Constantine P. Cavafy, 1911</div>
-        <p style="font-family:'Space Grotesk',sans-serif; font-weight:400; font-size:24px; line-height:1.7; color:#e3edef; margin:0 auto; max-width:760px; text-wrap:pretty;">As you set out for Ithaca<br>hope your road is a long one,<br>full of adventures, full of learning.</p>
-        <div style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:#3f6470; letter-spacing:0.4em; margin:18px 0;">· · ·</div>
-        <p style="font-family:'Space Grotesk',sans-serif; font-weight:400; font-size:24px; line-height:1.7; color:#e3edef; margin:0 auto; max-width:760px; text-wrap:pretty;">Ithaca gave you the marvelous journey.<br>Without her you wouldn't have set out.<br>Wise as you will have become, so full of experience,<br>you'll have understood by then what these Ithacas mean.</p>
-        <div style="margin-top:30px; display:flex; gap:24px; justify-content:center; flex-wrap:wrap; font-family:'IBM Plex Mono',monospace; font-size:11px;">
-          <a href="https://vasileiostzoumas.com/wp-content/uploads/2020/08/20.ithaca.jpg" style="color:#5fb3c0; text-decoration:none; border-bottom:1px solid #2c5460;">full poem in Greek ↗</a>
-          <a href="https://www.poetryfoundation.org/poems/51296/ithaka-56d22eef917ec" style="color:#5fb3c0; text-decoration:none; border-bottom:1px solid #2c5460;">English translation ↗</a>
+        <h2 style="font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:#b8890a; margin:0 0 14px;">Recognition</h2>
+        <div>
+          <sc-for list="{{ recognition }}" as="r" hint-placeholder-count="5">
+            <div style="display:flex; gap:12px; align-items:baseline; padding:11px 0; border-bottom:1px solid #e7e4db; font-size:14.5px; color:#2b3138;"><span style="color:#ffcb05; font-family:'IBM Plex Mono',monospace; font-size:12px;">▸</span><span>{{ r }}</span></div>
+          </sc-for>
         </div>
       </div>
     </section>
 
-    <footer style="padding:24px 0 60px; display:flex; justify-content:space-between; border-top:1px solid #d4dadd; font-family:'IBM Plex Mono',monospace; font-size:11px; color:#7d888c; flex-wrap:wrap; gap:12px;">
+    <section style="padding:52px 0 20px; border-top:1px solid #e2ded3; margin-top:40px;">
+      <div style="display:flex; align-items:baseline; justify-content:space-between; gap:20px; margin-bottom:8px; flex-wrap:wrap;">
+        <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:34px; letter-spacing:-0.015em; margin:0; color:#00274c;">Research Themes</h2>
+        <a href="research.html" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#00274c; text-decoration:none; border-bottom:2px solid #ffcb05; padding-bottom:2px;">All projects &amp; funding →</a>
+      </div>
+      <p style="font-size:16px; line-height:1.6; color:#566069; max-width:74ch; margin:0 0 30px;">Our work sits at the intersection of control, robotics, combinatorial optimization, and online learning — targeting autonomy for defense, disaster response, and smart cities.</p>
+      <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:22px;">
+        <sc-for list="{{ themes }}" as="t" hint-placeholder-count="0">
+          <a href="research.html" style="display:block; background:#ffffff; border:1px solid #e7e4db; border-radius:12px; overflow:hidden; text-decoration:none;" style-hover="border-color:#ffcb05; box-shadow:0 14px 30px rgba(0,39,76,0.10);">
+            <div style="height:180px; background:#eef0f2; overflow:hidden;">{{ t.imgEl }}</div>
+            <div style="padding:20px 20px 22px;">
+              <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:0.1em; text-transform:uppercase; color:#b8890a; margin-bottom:10px;">{{ t.tag }}</div>
+              <div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px; line-height:1.25; color:#00274c; margin-bottom:9px;">{{ t.name }}</div>
+              <div style="font-size:13.5px; line-height:1.55; color:#566069;">{{ t.blurb }}</div>
+            </div>
+          </a>
+        </sc-for>
+      </div>
+    </section>
+
+
+    <section style="display:grid; grid-template-columns:1fr 1.2fr; gap:44px; padding:52px 0; border-top:1px solid #e2ded3; align-items:start;">
+      <div>
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:18px;">
+          <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:26px; letter-spacing:-0.01em; margin:0; color:#00274c;">Recent News</h2>
+          <a href="news.html" style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#00274c; text-decoration:none; border-bottom:2px solid #ffcb05;">all →</a>
+        </div>
+        <div class="scroll-thin" style="max-height:440px; overflow-y:auto; background:#ffffff; border:1px solid #e7e4db; border-radius:10px; padding:4px 20px;">
+          <sc-for list="{{ news }}" as="n" hint-placeholder-count="6">
+            <div style="padding:15px 0; border-bottom:1px solid #f0eee7;">
+              <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#b8890a; margin-bottom:6px;">{{ n.date }}</div>
+              <div style="font-size:14.5px; line-height:1.55; color:#2b3138;">{{ n.text }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div>
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:18px;">
+          <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:26px; letter-spacing:-0.01em; margin:0; color:#00274c;">Selected Publications</h2>
+          <a href="publications.html" style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#00274c; text-decoration:none; border-bottom:2px solid #ffcb05;">all →</a>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <sc-for list="{{ selected }}" as="p" hint-placeholder-count="6">
+            <a href="{{ p.url }}" style="display:block; background:#ffffff; border:1px solid #e7e4db; border-radius:10px; padding:16px 18px; text-decoration:none;" style-hover="border-color:#ffcb05;">
+              <div style="display:flex; gap:9px; align-items:center; margin-bottom:8px; flex-wrap:wrap;">
+                <span style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#ffffff; background:#00274c; border-radius:3px; padding:3px 8px;">{{ p.venue }}</span>
+                <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#98a1aa;">{{ p.year }}</span>
+              </div>
+              <div style="font-family:'Space Grotesk',sans-serif; font-weight:500; font-size:16.5px; line-height:1.3; color:#14181c; margin-bottom:6px;">{{ p.title }}</div>
+              <div style="font-size:13px; color:#6a7078;">{{ p.authors }}</div>
+            </a>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding:44px 0 8px; border-top:1px solid #e2ded3;">
+      <div style="background:#00274c; color:#cdd9e6; border-radius:14px; padding:56px 48px; text-align:center;">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:#ffcb05; margin-bottom:24px;">Ithaca · Constantine P. Cavafy, 1911</div>
+        <p style="font-family:'Space Grotesk',sans-serif; font-weight:400; font-size:23px; line-height:1.7; color:#eef3f8; margin:0 auto; max-width:760px; text-wrap:pretty;">As you set out for Ithaca<br>hope your road is a long one,<br>full of adventures, full of learning.</p>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:#ffcb05; letter-spacing:0.4em; margin:20px 0;">· · ·</div>
+        <p style="font-family:'Space Grotesk',sans-serif; font-weight:400; font-size:23px; line-height:1.7; color:#eef3f8; margin:0 auto; max-width:760px; text-wrap:pretty;">Ithaca gave you the marvelous journey.<br>Without her you wouldn't have set out.</p>
+      </div>
+    </section>
+
+    <footer style="padding:34px 0 60px; margin-top:24px; display:flex; justify-content:space-between; border-top:1px solid #e2ded3; font-family:'IBM Plex Mono',monospace; font-size:11px; color:#8a8579; flex-wrap:wrap; gap:12px;">
       <span>3049 François-Xavier Bagnoud Building · Ann Arbor</span>
       <span>vtzoumas [at] umich.edu · he/him</span>
     </footer>
   </div>
 </div>
-
-<style>
-  .nav-toggle { display:none; background:none; border:0; padding:8px; margin:0; cursor:pointer; flex-direction:column; justify-content:center; gap:5px; }
-  .nav-toggle span { display:block; width:22px; height:2px; background:#cfdde1; border-radius:2px; transition:transform .2s ease, opacity .2s ease; }
-  .nav-toggle.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
-  .nav-toggle.open span:nth-child(2) { opacity:0; }
-  .nav-toggle.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
-  @media (max-width: 860px) {
-    .nav-toggle { display:inline-flex; }
-    .nav-links { display:none !important; position:absolute; top:100%; left:0; right:0; flex-direction:column !important; align-items:stretch !important; justify-content:flex-start !important; gap:2px !important; background:rgba(15,24,31,0.98); border-bottom:1px solid #2c3a40; padding:10px 22px 16px; box-shadow:0 14px 28px rgba(0,0,0,0.28); }
-    .nav-links.open { display:flex !important; }
-    .nav-links a, .nav-links span { padding:12px !important; border-radius:6px; font-size:14px !important; white-space:normal !important; }
-    .hero-grid { grid-template-columns: 1fr !important; }
-    .hero-grid img { width: 100% !important; height: auto !important; aspect-ratio: 1 / 1; }
-    .two-col { grid-template-columns: 1fr !important; gap: 28px !important; }
-    nav > div, header > div, body > div > div { padding-left: 22px !important; padding-right: 22px !important; }
-    .pub-card { grid-template-columns: 1fr !important; }
-    .pub-card img, .pub-card .fig { width: 100% !important; }
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const themes = [
+      { name: 'Morphable Aerial Robots', tag: 'Aerial · Morphable', blurb: 'Quadrotors and omnidirectional aircraft that reshape their bodies mid-flight for superhuman agility, aerial manipulation, and resilience to damage.', img: 'pub-images/morphquad.png', show: true },
+      { name: 'Resource-Aware Multi-Robot Coordination', tag: 'Multi-Agent Networks', blurb: 'Communication- and computation-efficient algorithms for robot teams — distributed submodular optimization over self-configurable mesh networks.', img: 'pub-images/self-configurable-networks.png', show: true },
+      { name: 'Learning-Based Control, No Regret', tag: 'Learning · Control', blurb: 'Online learning fused with model predictive control — system identification, Koopman operators, and adaptive locomotion with provable guarantees.', img: 'pub-images/sysid-mpc.png', show: true },
+      { name: 'Resilient Perception & Estimation', tag: 'Robust · Resilient', blurb: 'Outlier-robust estimation and attack-robust information gathering that keep perception reliable under sensor failure and adversarial conditions.', img: 'pub-images/multi-robot-coordination.png', show: true },
+    ];
+    const recognition = [
+      'Army Research Office ECP Award — 2025',
+      'NSF CAREER Award — 2024',
+      'Best Paper in Robot Vision, ICRA 2020',
+      'Honorable Mention, IEEE RA-L 2020',
+      'Best Student Paper Finalist, IEEE CDC 2017',
+    ];
+    const news = [
+      { date: '04 / 2026', text: 'New preprint introducing the Value of Collaboration metric for self-configurable mesh networks.' },
+      { date: '04 / 2026', text: 'Two new preprints on distributed target-coverage games and online submodular maximization (ACC).' },
+      { date: '01 / 2026', text: 'Invited seminar, 12th Midwest Workshop on Control & Game Theory. Associate Editor, IROS 2026.' },
+      { date: '12 / 2025', text: 'Adaptive Legged Locomotion via Online Learning for MPC accepted at IEEE RA-L.' },
+      { date: '09 / 2025', text: 'Jiawei Xu joins iRaL as a postdoc to work on the morphable quadrotor.' },
+      { date: '08 / 2025', text: 'Received the Army Early Career Program (ECP) Award.' },
+      { date: '06 / 2025', text: 'Awarded a Michigan MTRAC grant to continue the morphable quadrotor program.' },
+      { date: '08 / 2024', text: 'Received an NSF CAREER Award.' },
+    ];
+    const selected = [
+      { title: 'MorphQuad: Morphable Quadrotor for Superhuman Maneuverability, Manipulation, and Resiliency', authors: 'J. C. Díaz Peón González Pacheco, A. Zhao, J. Xu, … V. Tzoumas', venue: 'Under Review', year: '2026', url: '#' },
+      { title: 'Communication- and Computation-Efficient Distributed Submodular Optimization in Robot Mesh Networks', authors: 'Z. Xu, S. S. Garimella, V. Tzoumas', venue: 'IEEE T-RO', year: '2025', url: 'https://arxiv.org/abs/2407.10382' },
+      { title: 'Simultaneous System Identification and Model Predictive Control with No Dynamic Regret', authors: 'H. Zhou, V. Tzoumas', venue: 'IEEE T-RO', year: '2025', url: 'http://arxiv.org/abs/2407.04143' },
+      { title: 'Adaptive Legged Locomotion via Online Learning for Model Predictive Control', authors: 'H. Zhou, X. Zhang, V. Tzoumas', venue: 'IEEE RA-L', year: '2025', url: 'https://arxiv.org/pdf/2510.15626' },
+      { title: 'Outlier-Robust Estimation: Hardness, Minimally-Tuned Algorithms, and Applications', authors: 'P. Antonante, V. Tzoumas, H. Yang, L. Carlone', venue: 'IEEE T-RO', year: '2022', url: 'https://arxiv.org/pdf/2007.15109.pdf' },
+      { title: 'LQG Control and Sensing Co-Design', authors: 'V. Tzoumas, L. Carlone, G. J. Pappas, A. Jadbabaie', venue: 'IEEE TAC', year: '2021', url: 'https://arxiv.org/abs/1802.08376' },
+    ];
+    themes.forEach(t => { t.imgEl = React.createElement('img', { src: t.img, alt: '', style: { width: '100%', height: '100%', objectFit: 'cover', display: 'block' } }); });
+    return { themes, recognition, news, selected };
   }
-</style>
-
-<script type="module">
-import { PUB_GROUPS, PUB_TOTAL } from './pubs-data.js';
-
-// --- Home-page content (transcribed verbatim from the design source) ---
-const pubs = [
-  {year:'2026', title:'MorphQuad: Morphable Quadrotor for Superhuman Maneuverability, Manipulation, and Resiliency', authors:'J. C. Díaz Peón González Pacheco, A. Zhao, J. Xu, A. Navsalkar, A. Scheffer, S. Shankar, I. Bao, H. Zhou, V. Tzoumas', venue:'Under Review', tag:'Aerial · Morphable', url:'#', img:'morphable quadrotor manipulation', imgSrc:'pub-images/morphquad.png', imgFit:'contain'},
-  {year:'2026', title:'Self-Configurable Mesh-Networks for Scalable Distributed Submodular Bandit Optimization', authors:'Z. Xu, V. Tzoumas', venue:'Preprint', tag:'Multi-Agent Networks', url:'https://arxiv.org/pdf/2602.19366', img:'value-of-collaboration mesh diagram', imgSrc:'pub-images/mesh-networks-bandit.png'},
-  {year:'2026', title:'Distributed Equilibrium-Seeking in Target Coverage Games via Self-Configurable Networks under Limited Communication', authors:'J. Bhargav, Z. Xu, V. Tzoumas, M. Ghasemi, S. Sundaram', venue:'Preprint', tag:'Coverage Games', url:'https://arxiv.org/pdf/2603.17335', img:'target coverage game schematic', imgSrc:'pub-images/coverage-games.png'},
-  {year:'2025', title:'Distributed Online Submodular Maximization under Communication Delays', authors:'Z. Xu, V. Tzoumas', venue:'ACC 2026', tag:'Distributed Optimization', url:'https://arxiv.org/pdf/2603.27803', img:'delayed-communication timeline', imgSrc:''},
-  {year:'2025', title:'Adaptive Legged Locomotion via Online Learning for Model Predictive Control', authors:'H. Zhou, X. Zhang, V. Tzoumas', venue:'IEEE RA-L', tag:'Legged Robots · MPC', url:'https://arxiv.org/pdf/2510.15626', img:'quadruped on uneven terrain', imgSrc:'pub-images/legged-locomotion.png'},
-  {year:'2025', title:'MorphEUS: Morphable Omnidirectional Unmanned System', authors:'I. Bao, J. C. Díaz Peón González Pacheco, A. Navsalkar, A. Scheffer, S. Shankar, A. Zhao, H. Zhou, V. Tzoumas', venue:'ICRA Workshop', tag:'Aerial · Morphable', url:'https://arxiv.org/abs/2505.18270', img:'morphable omnidirectional quadrotor', imgSrc:'pub-images/morpheus.png'},
-  {year:'2025', title:'End-to-End Learning Framework for Solving Non-Markovian Optimal Control', authors:'X. Zhang, P. Zhang, X. Xiao, S. Li, V. Tzoumas, V. Gupta, P. Bogdan', venue:'ICML 2025', tag:'Learning · Control', url:'https://arxiv.org/abs/2502.04649', img:'non-Markovian control architecture', imgSrc:'pub-images/non-markovian-control.png'},
-  {year:'2025', title:'Simultaneous System Identification and Model Predictive Control with No Dynamic Regret', authors:'H. Zhou, V. Tzoumas', venue:'IEEE T-RO', tag:'SysID · MPC', url:'https://www.researchgate.net/publication/382065397', img:'sysID + MPC block diagram', imgSrc:'pub-images/sysid-mpc.png'},
-  {year:'2025', title:'No-Regret Model Predictive Control with Online Learning of Koopman Operators', authors:'H. Zhou, V. Tzoumas', venue:'ACC 2025', tag:'Koopman · MPC', url:'https://arxiv.org/abs/2504.15805', img:'Koopman operator learning plot', imgSrc:'pub-images/koopman-mpc.png'},
-  {year:'2024', title:'Communication- and Computation-Efficient Distributed Submodular Optimization in Robot Mesh Networks', authors:'Z. Xu, S. S. Garimella, V. Tzoumas', venue:'IEEE T-RO', tag:'Mesh Networks', url:'https://arxiv.org/abs/2407.10382', img:'robot mesh network topology', imgSrc:'pub-images/robot-mesh-networks.png'},
-  {year:'2024', title:'Performance-Aware Self-Configurable Multi-Agent Networks', authors:'Z. Xu, V. Tzoumas', venue:'CDC 2024', tag:'Multi-Agent Networks', url:'#', img:'self-configurable network graph', imgSrc:'pub-images/self-configurable-networks.png'},
-  {year:'2024', title:'Leveraging Untrustworthy Commands for Multi-Robot Coordination', authors:'Z. Xu, X. Lin, V. Tzoumas', venue:'ACC 2024', tag:'Multi-Robot', url:'https://arxiv.org/abs/2309.16161', img:'multi-robot coordination scene', imgSrc:'pub-images/multi-robot-coordination.png'},
-];
-const news = [
-  {date:'04 / 2026', text:'New preprint introducing the Value of Collaboration metric for self-configurable mesh networks.'},
-  {date:'04 / 2026', text:'Two new preprints on distributed target-coverage games and online submodular maximization (ACC).'},
-  {date:'01 / 2026', text:'Invited seminar, 12th Midwest Workshop on Control & Game Theory. Associate Editor, IROS 2026.'},
-  {date:'12 / 2025', text:'Adaptive Legged Locomotion via Online Learning for MPC accepted at IEEE RA-L.'},
-  {date:'09 / 2025', text:'Jiawei Xu joins iRaL as a postdoc to work on the morphable quadrotor.'},
-  {date:'08 / 2025', text:'Received the Army Early Career Program (ECP) Award.'},
-  {date:'06 / 2025', text:'Awarded a Michigan MTRAC grant to continue the morphable quadrotor program.'},
-  {date:'05 / 2025', text:'MorphEUS accepted at an ICRA workshop; End-to-End Non-Markovian Optimal Control at ICML.'},
-  {date:'04 / 2025', text:'Three papers accepted — IEEE T-RO (×2) and ACC.'},
-  {date:'03 / 2025', text:'Hongyu Zhou and Zirui Xu receive the Rackham Predoctoral Fellowship.'},
-  {date:'01 / 2025', text:'Elevated to IEEE Senior Member; Associate Editor for IROS 2025.'},
-  {date:'08 / 2024', text:'Received an NSF CAREER Award.'},
-  {date:'07 / 2024', text:'Organized an invited CDC session on Submodularity in Control, Robotics & ML.'},
-  {date:'01 / 2024', text:'Leveraging Untrustworthy Commands for Multi-Robot Coordination accepted to ACC 2024.'},
-];
-const interestsCollab = ['Online Learning & Optimization','Perception–Computation–Communication–Control Co-Design','Novel Self-Reconfigurable Robots'];
-const interestsApps = ['Online Learning for Extreme Agility','Multi-Robot Planning in Contested Environments','Resilient Morphable Multi-Rotors'];
-const honors = ['Army ECP Award','NSF CAREER Award','Best Paper in Robot Vision, ICRA 2020','Honorable Mention, RA-L 2020','Best Student Paper Finalist, CDC 2017'];
-
-// --- Helpers ---
-const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const $ = (id) => document.getElementById(id);
-
-// --- Recognition ---
-$('honors').innerHTML = honors.map((h) =>
-  `<div style="display:flex; gap:12px; align-items:baseline; padding:9px 0; border-bottom:1px solid #dde2e4; font-size:14.5px; color:#2b3338;"><span style="color:#3f9aa8; font-family:'IBM Plex Mono',monospace; font-size:11px;">▸</span>${esc(h)}</div>`
-).join('');
-
-// --- Recent News ---
-$('news').innerHTML = news.map((n) =>
-  `<div style="padding:16px 0; border-bottom:1px solid #eef1f2;">
-     <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#3f8d9a; margin-bottom:6px;">${esc(n.date)}</div>
-     <div style="font-size:15px; line-height:1.55; color:#2b3338;">${esc(n.text)}</div>
-   </div>`
-).join('');
-
-// --- Research interests ---
-const interestItem = (it) =>
-  `<div style="font-family:'Space Grotesk',sans-serif; font-size:17px; font-weight:500; line-height:1.35; color:#1a2226; padding:8px 0;">${esc(it)}</div>`;
-$('interests-collab').innerHTML = interestsCollab.map(interestItem).join('');
-$('interests-apps').innerHTML = interestsApps.map(interestItem).join('');
-
-// --- Selected Publications ---
-$('pub-count').textContent = pubs.length + ' papers';
-$('selected-pubs').innerHTML = pubs.map((pub) => {
-  const fit = pub.imgFit || 'cover';
-  const media = pub.imgSrc
-    ? `<img src="${esc(pub.imgSrc)}" alt="${esc(pub.img)}" style="width:220px; height:140px; border-radius:5px; object-fit:${esc(fit)}; background:#f0f3f4; border:1px solid #e3e8ea;" />`
-    : `<div class="fig" style="width:220px; height:140px; border-radius:5px; background:repeating-linear-gradient(135deg,#e4e9ea,#e4e9ea 9px,#dbe2e3 9px,#dbe2e3 18px); display:flex; align-items:flex-end; padding:11px; font-family:'IBM Plex Mono',monospace; font-size:10px; color:#8a979c; line-height:1.4;">fig — ${esc(pub.img)}</div>`;
-  return `<article class="pub-card" style="display:grid; grid-template-columns:220px 1fr; gap:22px; background:#fff; border:1px solid #dde2e4; border-radius:8px; padding:16px; align-items:stretch;">
-    ${media}
-    <div style="display:flex; flex-direction:column;">
-      <div style="display:flex; gap:10px; align-items:center; margin-bottom:8px;">
-        <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#0c1418; background:#cde4e8; border-radius:3px; padding:3px 8px;">${esc(pub.venue)}</span>
-        <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#8a979c;">${esc(pub.year)}</span>
-      </div>
-      <h3 style="font-family:'Space Grotesk',sans-serif; font-weight:500; font-size:20px; line-height:1.28; margin:0 0 8px; letter-spacing:-0.005em;"><a href="${esc(pub.url)}" style="text-decoration:none; color:#15181b;">${esc(pub.title)}</a></h3>
-      <div style="font-size:14px; color:#5a666b; margin-bottom:auto;">${esc(pub.authors)}</div>
-      <div style="display:flex; gap:12px; align-items:center; margin-top:12px;">
-        <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5a666b; border:1px solid #dde2e4; border-radius:3px; padding:4px 9px;">${esc(pub.tag)}</span>
-        <a href="${esc(pub.url)}" style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#3f8d9a; text-decoration:none; white-space:nowrap;">→ paper</a>
-      </div>
-    </div>
-  </article>`;
-}).join('');
-
-// --- All Publications ---
-$('pub-total').textContent = PUB_TOTAL + ' papers';
-$('all-pubs').innerHTML = PUB_GROUPS.map((group) => {
-  const items = group.items.map((pub) => {
-    const titleEl = pub.hasUrl
-      ? `<a href="${esc(pub.url)}" style="font-family:'Space Grotesk',sans-serif; font-weight:500; font-size:18px; line-height:1.3; color:#15181b; text-decoration:none;">${esc(pub.title)}</a>`
-      : `<span style="font-family:'Space Grotesk',sans-serif; font-weight:500; font-size:18px; line-height:1.3; color:#15181b;">${esc(pub.title)}</span>`;
-    const tagEl = pub.hasTag
-      ? `<span style="display:inline-block; margin-top:8px; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#0c1418; background:#cde4e8; border-radius:3px; padding:3px 8px; white-space:nowrap;">${esc(pub.tag)}</span>`
-      : '';
-    return `<article style="display:grid; grid-template-columns:56px 1fr; gap:18px; padding:15px 0; border-bottom:1px solid #eef1f2;">
-      <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#9aa5a9; padding-top:3px;">${esc(pub.year)}</div>
-      <div>
-        ${titleEl}
-        <div style="font-size:13.5px; color:#5a666b; margin-top:5px;">${esc(pub.authors)}</div>
-        <div style="font-size:12.5px; color:#8a979c; margin-top:3px; font-style:italic;">${esc(pub.venue)} · ${esc(pub.year)}</div>
-        ${tagEl}
-      </div>
-    </article>`;
-  }).join('');
-  return `<div style="position:sticky; top:0; background:#fff; padding:16px 0 10px; font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#3f8d9a; border-bottom:1px solid #e3e8ea; z-index:1;">${esc(group.label)} · ${group.count}</div>${items}`;
-}).join('');
+}
 </script>
 </body>
 </html>
